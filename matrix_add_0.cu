@@ -7,7 +7,6 @@
 
 __global__ void matrix_add(int* A, int* B, int* C)
 {
-	// 这里需要注意，cuda的xy 和 数组的xy 是相反的
 	int i = blockIdx.y * blockDim.y + threadIdx.y;
 	int j = blockIdx.x * blockDim.x + threadIdx.x;
 
