@@ -52,7 +52,7 @@ int main()
 	{
 		for (int j = 0; j < N; j++)
 		{
-			A[i * N + j] = B[i * N + j] = i + j;
+			A[i * N + j] = B[i * N + j] = i - j;
 		}
 	}
 

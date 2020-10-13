@@ -55,5 +55,9 @@ various cuda code
 
   ![avatar](./images/matrix_add_0.png)
 
+* matrix_add_1.cu
+
+  ![avatar](./images/matrix_add_1.png)
+
 * 
 
