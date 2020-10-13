@@ -45,4 +45,10 @@ various cuda code in visual studio
 
   ![avatar](./images/device_query.png)
 
+* vector_add_0.cu
+
+  ![avatar](./images/vector_add_0.png)
+
+  
+
 * 
