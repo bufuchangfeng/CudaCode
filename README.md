@@ -41,4 +41,8 @@ various cuda code in visual studio
 
   ![avatar](./images/hello_world_from_gpu.png)
 
+* device_query.cu
+
+  ![avatar](./images/device_query.png)
+
 * 
