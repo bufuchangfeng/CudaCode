@@ -1,4 +1,4 @@
-# VCC
+# CudaCode
 various cuda code
 
 ## 分类
