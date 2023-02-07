@@ -7,8 +7,7 @@ int main()
 {
 	int device_count = 0;
 	cudaGetDeviceCount(&device_count);
-
-	printf("共有 %d 张显卡\n", device_count);
+	printf("gpu count: %d\n", device_count);
 
 	cudaDeviceProp device_prop;
 
@@ -17,8 +16,8 @@ int main()
 		cudaGetDeviceProperties(&device_prop, i);
 
 		printf("\n\n\n");
-		printf("显卡型号: %s\n", device_prop.name);
-		printf("显卡全局内存容量(MB): %f\n",float(device_prop.totalGlobalMem) /(1024.0*1024.0));
+		printf("gpu model: %s\n", device_prop.name);
+		printf("gpu memory capacity(MB): %f\n",float(device_prop.totalGlobalMem) /(1024.0*1024.0));
 	}
 
 	return 0;
