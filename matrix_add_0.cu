@@ -7,8 +7,8 @@
 
 __global__ void matrix_add(int* A, int* B, int* C)
 {
-	int i = blockIdx.y * blockDim.y + threadIdx.y;
-	int j = blockIdx.x * blockDim.x + threadIdx.x;
+	int i = blockIdx.x * blockDim.x + threadIdx.x;
+	int j = blockIdx.y * blockDim.y + threadIdx.y;
 
 	C[i * N + j] = A[i * N + j] + B[i * N + j];
 }
@@ -51,7 +51,7 @@ int main()
 	{
 		for (int j = 0; j < N; j++)
 		{
-			A[i * N + j] = B[i * N + j] = i - j;
+			A[i * N + j] = B[i * N + j] = rand() % 10;
 		}
 	}
 
